@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="de" data-page-title-de="GrundsteuerPrüfer – Ihren Grundsteuerbescheid kostenlos prüfen" data-page-title-en="GrundsteuerPrüfer – Check Your Property Tax Notice for Free">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrundsteuerPrüfer – Ihren Grundsteuerbescheid kostenlos prüfen</title>
+  <meta name="description"
+    content="GrundsteuerPrüfer prüft Ihren Grundsteuerbescheid automatisch auf Fehler. Jetzt kostenlos testen – entwickelt in Deutschland."
+    data-meta-desc-de="GrundsteuerPrüfer prüft Ihren Grundsteuerbescheid automatisch auf Fehler. Jetzt kostenlos testen – entwickelt in Deutschland."
+    data-meta-desc-en="GrundsteuerPrüfer automatically checks your property tax notice for errors. Try it free – developed in Germany." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://grundsteuerpruefer.vercel.app/" />
+  <meta property="og:title" content="GrundsteuerPrüfer – Grundsteuerbescheid prüfen" />
+  <meta property="og:description" content="Automatische Prüfung Ihres Grundsteuerbescheids auf Fehler. Kostenlos starten." />
+  <meta property="og:image" content="https://grundsteuerpruefer.vercel.app/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="app-icon-light.svg" />
+  <link rel="apple-touch-icon" href="app-icon-light.svg" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://grundsteuerpruefer.vercel.app/" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="nav" role="banner">
+    <div class="container">
+      <nav class="nav__inner" aria-label="Hauptnavigation / Main navigation">
+
+        <a href="/" class="nav__logo" aria-label="GrundsteuerPrüfer – Startseite">
+          <img src="app-icon-light.svg" alt="GrundsteuerPrüfer Logo" width="36" height="36" />
+          <span>GrundsteuerPrüfer</span>
+        </a>
+
+        <ul class="nav__links" role="list">
+          <li>
+            <a href="#features" data-de="Funktionen" data-en="Features">Funktionen</a>
+          </li>
+          <li>
+            <a href="#how-it-works" data-de="So funktioniert's" data-en="How It Works">So funktioniert's</a>
+          </li>
+          <li>
+            <a href="#faq" data-de="FAQ" data-en="FAQ">FAQ</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <div class="lang-toggle" role="group" aria-label="Sprache wählen / Select language">
+            <button class="lang-toggle__btn active" data-lang="de" aria-label="Deutsch">DE</button>
+            <button class="lang-toggle__btn" data-lang="en" aria-label="English">EN</button>
+          </div>
+          <a href="https://grundsteuerpruefer.vercel.app" target="_blank" rel="noopener noreferrer"
+             class="btn btn--primary btn--sm"
+             data-de="App öffnen" data-en="Open App">App öffnen</a>
+        </div>
+
+        <button class="nav__hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero__inner">
+
+          <div class="hero__text">
+            <div class="hero__badge" aria-label="Neue Reform 2025">
+              <span>🏛️</span>
+              <span data-de="Grundsteuerreform 2025" data-en="Property Tax Reform 2025">Grundsteuerreform 2025</span>
+            </div>
+
+            <h1 id="hero-heading" class="headline-xl hero__title">
+              <span data-de="Ihren Grundsteuerbescheid" data-en="Your Property Tax Notice">Ihren Grundsteuerbescheid</span><br />
+              <span class="text-accent" data-de="kostenlos prüfen." data-en="checked for free.">kostenlos prüfen.</span>
+            </h1>
+
+            <p class="subline subline--light hero__sub"
+               data-de="Der GrundsteuerPrüfer analysiert Ihren Bescheid automatisch, erkennt Rechenfehler und zeigt Ihnen Schritt für Schritt, wie Sie Einspruch einlegen können – sicher, schnell, made in Germany."
+               data-en="GrundsteuerPrüfer automatically analyses your tax notice, detects calculation errors, and guides you step by step through the objection process – secure, fast, made in Germany.">
+              Der GrundsteuerPrüfer analysiert Ihren Bescheid automatisch, erkennt Rechenfehler und zeigt Ihnen Schritt für Schritt, wie Sie Einspruch einlegen können – sicher, schnell, made in Germany.
+            </p>
+
+            <div class="hero__cta">
+              <a href="https://grundsteuerpruefer.vercel.app" target="_blank" rel="noopener noreferrer"
+                 class="btn btn--primary btn--lg"
+                 data-de="Jetzt kostenlos prüfen" data-en="Start Free Check">
+                Jetzt kostenlos prüfen
+              </a>
+              <a href="#how-it-works" class="btn btn--outline btn--lg"
+                 data-de="Wie funktioniert's?" data-en="How does it work?">
+                Wie funktioniert's?
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__mockup">
+              <div class="hero__mockup-header">
+                <div class="hero__mockup-dot"></div>
+                <div class="hero__mockup-dot"></div>
+                <div class="hero__mockup-dot"></div>
+              </div>
+
+              <div class="mockup-row mockup-row--ok">
+                <span class="mockup-row__icon">✅</span>
+                <span data-de="Grundstücksfläche korrekt" data-en="Plot area correct">Grundstücksfläche korrekt</span>
+              </div>
+              <div class="mockup-row mockup-row--warn">
+                <span class="mockup-row__icon">⚠️</span>
+                <span data-de="Bodenrichtwert abweichend" data-en="Land value deviating">Bodenrichtwert abweichend</span>
+              </div>
+              <div class="mockup-row mockup-row--error">
+                <span class="mockup-row__icon">❌</span>
+                <span data-de="Hebesatz falsch berechnet" data-en="Rate incorrectly calculated">Hebesatz falsch berechnet</span>
+              </div>
+              <div class="mockup-row mockup-row--ok">
+                <span class="mockup-row__icon">✅</span>
+                <span data-de="Steuerklasse korrekt" data-en="Tax class correct">Steuerklasse korrekt</span>
+              </div>
+
+              <div class="mockup-score">
+                <span data-de="Prüfergebnis" data-en="Check Result">Prüfergebnis</span>
+                <span class="mockup-score__value" data-de="Fehler gefunden" data-en="Error found">Fehler gefunden</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STATS BAR ==================== -->
+    <section class="stats-bar" aria-label="Statistiken / Statistics">
+      <div class="container">
+        <div class="stats-bar__grid">
+
+          <div class="stat-item">
+            <div class="stat-item__value">36 Mio.</div>
+            <div class="stat-item__label"
+                 data-de="Grundstücke in Deutschland" data-en="Properties in Germany">
+              Grundstücke in Deutschland
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-item__value">~30 %</div>
+            <div class="stat-item__label"
+                 data-de="Bescheide mit Fehlern" data-en="Notices with errors">
+              Bescheide mit Fehlern
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-item__value">&lt; 2 Min.</div>
+            <div class="stat-item__label"
+                 data-de="Prüfung dauert" data-en="Check takes">
+              Prüfung dauert
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-item__value">100 %</div>
+            <div class="stat-item__label"
+                 data-de="DSGVO-konform" data-en="GDPR compliant">
+              DSGVO-konform
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURES ==================== -->
+    <section class="section section--alt" id="features" aria-labelledby="features-heading">
+      <div class="container">
+
+        <div class="features__intro">
+          <h2 id="features-heading" class="headline-lg"
+              data-de="Alles was Sie für Ihren Einspruch brauchen"
+              data-en="Everything you need for your objection">
+            Alles was Sie für Ihren Einspruch brauchen
+          </h2>
+          <p class="subline"
+             data-de="Von der automatischen Bescheidprüfung bis zur fertigen Einspruchsvorlage – GrundsteuerPrüfer begleitet Sie durch den gesamten Prozess."
+             data-en="From automated notice checking to the finished objection template – GrundsteuerPrüfer guides you through the entire process.">
+            Von der automatischen Bescheidprüfung bis zur fertigen Einspruchsvorlage – GrundsteuerPrüfer begleitet Sie durch den gesamten Prozess.
+          </p>
+        </div>
+
+        <div class="features__grid">
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🔍</div>
+            <h3 class="feature-card__title"
+                data-de="Automatische Bescheidprüfung"
+                data-en="Automated Notice Analysis">
+              Automatische Bescheidprüfung
+            </h3>
+            <p class="feature-card__text"
+               data-de="Laden Sie Ihren Grundsteuerbescheid hoch. Unsere KI prüft alle Werte – Grundstücksfläche, Bodenrichtwert, Hebesatz und Steuermesszahl – auf Plausibilität und Rechenfehler."
+               data-en="Upload your property tax notice. Our AI checks all values – plot area, land value, multiplier and tax rate – for plausibility and calculation errors.">
+              Laden Sie Ihren Grundsteuerbescheid hoch. Unsere KI prüft alle Werte – Grundstücksfläche, Bodenrichtwert, Hebesatz und Steuermesszahl – auf Plausibilität und Rechenfehler.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">📋</div>
+            <h3 class="feature-card__title"
+                data-de="Detailliertes Fehlerprotokoll"
+                data-en="Detailed Error Report">
+              Detailliertes Fehlerprotokoll
+            </h3>
+            <p class="feature-card__text"
+               data-de="Sie erhalten ein übersichtliches Protokoll aller gefundenen Fehler mit klarer Erklärung, warum ein Wert abweicht und welche rechtliche Grundlage greift."
+               data-en="You receive a clear report of all errors found, with explanations of why a value deviates and which legal basis applies.">
+              Sie erhalten ein übersichtliches Protokoll aller gefundenen Fehler mit klarer Erklärung, warum ein Wert abweicht und welche rechtliche Grundlage greift.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">📝</div>
+            <h3 class="feature-card__title"
+                data-de="Fertige Einspruchsvorlage"
+                data-en="Ready-to-Use Objection Template">
+              Fertige Einspruchsvorlage
+            </h3>
+            <p class="feature-card__text"
+               data-de="Auf Knopfdruck generiert GrundsteuerPrüfer eine rechtssichere Einspruchsvorlage, die Sie direkt an Ihr Finanzamt senden können – ohne Anwalt, ohne Aufwand."
+               data-en="At the click of a button, GrundsteuerPrüfer generates a legally sound objection template you can send directly to your tax office – no lawyer needed.">
+              Auf Knopfdruck generiert GrundsteuerPrüfer eine rechtssichere Einspruchsvorlage, die Sie direkt an Ihr Finanzamt senden können – ohne Anwalt, ohne Aufwand.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🏦</div>
+            <h3 class="feature-card__title"
+                data-de="Bodenrichtwert-Abgleich"
+                data-en="Land Value Comparison">
+              Bodenrichtwert-Abgleich
+            </h3>
+            <p class="feature-card__text"
+               data-de="Wir gleichen den in Ihrem Bescheid verwendeten Bodenrichtwert mit den offiziellen Gutachterausschuss-Daten ab und zeigen Abweichungen transparent auf."
+               data-en="We compare the land value in your notice with official appraisal committee data and highlight any deviations transparently.">
+              Wir gleichen den in Ihrem Bescheid verwendeten Bodenrichtwert mit den offiziellen Gutachterausschuss-Daten ab und zeigen Abweichungen transparent auf.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🔒</div>
+            <h3 class="feature-card__title"
+                data-de="Datenschutz by Design"
+                data-en="Privacy by Design">
+              Datenschutz by Design
+            </h3>
+            <p class="feature-card__text"
+               data-de="Ihre Daten werden ausschließlich für die Prüfung verarbeitet, nicht gespeichert und nicht weitergegeben. 100 % DSGVO-konform, Server in Deutschland."
+               data-en="Your data is processed only for the check, never stored or shared. 100% GDPR compliant, servers in Germany.">
+              Ihre Daten werden ausschließlich für die Prüfung verarbeitet, nicht gespeichert und nicht weitergegeben. 100 % DSGVO-konform, Server in Deutschland.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">📊</div>
+            <h3 class="feature-card__title"
+                data-de="Dashboard & Übersicht"
+                data-en="Dashboard &amp; Overview">
+              Dashboard &amp; Übersicht
+            </h3>
+            <p class="feature-card__text"
+               data-de="Verwalten Sie alle Ihre Objekte in einem übersichtlichen Dashboard. Behalten Sie den Status jedes Einspruchs im Blick und werden Sie über Fristen benachrichtigt."
+               data-en="Manage all your properties in one clear dashboard. Track the status of every objection and get notified about deadlines.">
+              Verwalten Sie alle Ihre Objekte in einem übersichtlichen Dashboard. Behalten Sie den Status jedes Einspruchs im Blick und werden Sie über Fristen benachrichtigt.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS ==================== -->
+    <section class="section" id="how-it-works" aria-labelledby="hiw-heading">
+      <div class="container">
+
+        <div class="text-center mb-16">
+          <h2 id="hiw-heading" class="headline-lg"
+              data-de="In 4 Schritten zum geprüften Bescheid"
+              data-en="4 Steps to a Verified Tax Notice">
+            In 4 Schritten zum geprüften Bescheid
+          </h2>
+          <p class="subline mt-8"
+             data-de="Kein Steuerrecht-Studium nötig. GrundsteuerPrüfer führt Sie Schritt für Schritt."
+             data-en="No tax law expertise needed. GrundsteuerPrüfer guides you step by step.">
+            Kein Steuerrecht-Studium nötig. GrundsteuerPrüfer führt Sie Schritt für Schritt.
+          </p>
+        </div>
+
+        <div class="steps">
+
+          <div class="step">
+            <div class="step__number" aria-hidden="true">1</div>
+            <h3 class="step__title" data-de="Konto erstellen" data-en="Create Account">Konto erstellen</h3>
+            <p class="step__text"
+               data-de="Registrieren Sie sich kostenlos in weniger als einer Minute."
+               data-en="Register for free in less than a minute.">
+              Registrieren Sie sich kostenlos in weniger als einer Minute.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step__number" aria-hidden="true">2</div>
+            <h3 class="step__title" data-de="Bescheid hochladen" data-en="Upload Notice">Bescheid hochladen</h3>
+            <p class="step__text"
+               data-de="Laden Sie Ihren Grundsteuerbescheid als PDF oder Foto hoch."
+               data-en="Upload your property tax notice as a PDF or photo.">
+              Laden Sie Ihren Grundsteuerbescheid als PDF oder Foto hoch.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step__number" aria-hidden="true">3</div>
+            <h3 class="step__title" data-de="KI analysiert" data-en="AI Analyses">KI analysiert</h3>
+            <p class="step__text"
+               data-de="Unsere KI prüft alle Werte in Sekunden auf Fehler und Abweichungen."
+               data-en="Our AI checks all values in seconds for errors and deviations.">
+              Unsere KI prüft alle Werte in Sekunden auf Fehler und Abweichungen.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step__number" aria-hidden="true">4</div>
+            <h3 class="step__title" data-de="Ergebnis &amp; Einspruch" data-en="Result &amp; Object">Ergebnis &amp; Einspruch</h3>
+            <p class="step__text"
+               data-de="Erhalten Sie den Prüfbericht und laden Sie die fertige Einspruchsvorlage herunter."
+               data-en="Get the check report and download the ready-to-use objection template.">
+              Erhalten Sie den Prüfbericht und laden Sie die fertige Einspruchsvorlage herunter.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-40">
+          <a href="https://grundsteuerpruefer.vercel.app" target="_blank" rel="noopener noreferrer"
+             class="btn btn--primary btn--lg"
+             data-de="Jetzt kostenlos starten" data-en="Start for Free Now">
+            Jetzt kostenlos starten
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== TRUST ==================== -->
+    <section class="section section--alt" id="trust" aria-labelledby="trust-heading">
+      <div class="container">
+        <div class="trust__grid">
+
+          <div>
+            <h2 id="trust-heading" class="headline-lg mb-16"
+                data-de="Sicherheit und Vertrauen, die Sie verdienen"
+                data-en="Security and trust you deserve">
+              Sicherheit und Vertrauen, die Sie verdienen
+            </h2>
+            <p class="subline mb-16"
+               data-de="GrundsteuerPrüfer wurde in Deutschland entwickelt und erfüllt höchste Sicherheitsstandards."
+               data-en="GrundsteuerPrüfer was developed in Germany and meets the highest security standards.">
+              GrundsteuerPrüfer wurde in Deutschland entwickelt und erfüllt höchste Sicherheitsstandards.
+            </p>
+
+            <div class="trust__badges mt-24">
+
+              <div class="trust-badge">
+                <span class="trust-badge__icon" aria-hidden="true">🇩🇪</span>
+                <span class="trust-badge__text"
+                      data-de="Entwickelt in Deutschland"
+                      data-en="Developed in Germany">
+                  Entwickelt in Deutschland
+                </span>
+              </div>
+
+              <div class="trust-badge">
+                <span class="trust-badge__icon" aria-hidden="true">🔐</span>
+                <span class="trust-badge__text"
+                      data-de="DSGVO-konform"
+                      data-en="GDPR Compliant">
+                  DSGVO-konform
+                </span>
+              </div>
+
+              <div class="trust-badge">
+                <span class="trust-badge__icon" aria-hidden="true">🏛️</span>
+                <span class="trust-badge__text"
+                      data-de="Rechtssichere Vorlagen"
+                      data-en="Legally Verified Templates">
+                  Rechtssichere Vorlagen
+                </span>
+              </div>
+
+              <div class="trust-badge">
+                <span class="trust-badge__icon" aria-hidden="true">⚡</span>
+                <span class="trust-badge__text"
+                      data-de="Prüfung in &lt; 2 Minuten"
+                      data-en="Check in &lt; 2 Minutes">
+                  Prüfung in &lt; 2 Minuten
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="trust__seal" aria-label="Entwickelt in Deutschland Siegel">
+            <img src="_source_assets/made-in-germany-sign.svg"
+                 alt="Entwickelt in Deutschland"
+                 width="200" height="200"
+                 loading="lazy" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="section" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+
+        <div class="text-center mb-16">
+          <h2 id="faq-heading" class="headline-lg"
+              data-de="Häufig gestellte Fragen"
+              data-en="Frequently Asked Questions">
+            Häufig gestellte Fragen
+          </h2>
+        </div>
+
+        <div class="faq__list" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-de="Ist GrundsteuerPrüfer kostenlos?" data-en="Is GrundsteuerPrüfer free?">
+                Ist GrundsteuerPrüfer kostenlos?
+              </span>
+              <span class="faq-item__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-item__answer">
+              <p data-de="Ja, die Grundprüfung ist komplett kostenlos. Der Prüfbericht mit allen Details sowie die Einspruchsvorlage sind im kostenlosen Tarif enthalten. Für erweiterte Funktionen wie Mehrfachobjekte und Premium-Support gibt es einen optionalen Premiumtarif."
+                 data-en="Yes, the basic check is completely free. The detailed report and the objection template are included in the free plan. For extended features such as multiple properties and premium support, an optional premium plan is available.">
+                Ja, die Grundprüfung ist komplett kostenlos. Der Prüfbericht mit allen Details sowie die Einspruchsvorlage sind im kostenlosen Tarif enthalten. Für erweiterte Funktionen wie Mehrfachobjekte und Premium-Support gibt es einen optionalen Premiumtarif.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-de="Welche Unterlagen benötige ich?" data-en="What documents do I need?">
+                Welche Unterlagen benötige ich?
+              </span>
+              <span class="faq-item__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-item__answer">
+              <p data-de="Sie benötigen lediglich Ihren aktuellen Grundsteuerbescheid sowie – falls vorhanden – den Grundsteuerwertbescheid und den Grundsteuermessbescheid Ihres Finanzamts. Das Hochladen als PDF oder Foto genügt."
+                 data-en="You only need your current property tax notice and – if available – the property value assessment notice and the property tax assessment notice from your tax office. Uploading as a PDF or photo is sufficient.">
+                Sie benötigen lediglich Ihren aktuellen Grundsteuerbescheid sowie – falls vorhanden – den Grundsteuerwertbescheid und den Grundsteuermessbescheid Ihres Finanzamts. Das Hochladen als PDF oder Foto genügt.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-de="Bis wann muss ich Einspruch einlegen?" data-en="What is the deadline to file an objection?">
+                Bis wann muss ich Einspruch einlegen?
+              </span>
+              <span class="faq-item__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-item__answer">
+              <p data-de="Die gesetzliche Einspruchsfrist beträgt einen Monat nach Bekanntgabe des Bescheids (§ 355 AO). GrundsteuerPrüfer informiert Sie automatisch, wie viel Zeit Ihnen noch bleibt."
+                 data-en="The legal objection period is one month after the notice is issued (§ 355 AO). GrundsteuerPrüfer automatically informs you how much time you have left.">
+                Die gesetzliche Einspruchsfrist beträgt einen Monat nach Bekanntgabe des Bescheids (§ 355 AO). GrundsteuerPrüfer informiert Sie automatisch, wie viel Zeit Ihnen noch bleibt.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-de="Wie werden meine Daten geschützt?" data-en="How is my data protected?">
+                Wie werden meine Daten geschützt?
+              </span>
+              <span class="faq-item__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-item__answer">
+              <p data-de="Ihre Daten werden verschlüsselt übertragen (TLS) und nach der Prüfung nicht dauerhaft gespeichert. Wir geben keine Daten an Dritte weiter. Unsere Server stehen in der EU. Weitere Details finden Sie in unserer Datenschutzerklärung."
+                 data-en="Your data is transmitted encrypted (TLS) and not permanently stored after the check. We do not share data with third parties. Our servers are located in the EU. See our Privacy Policy for more details.">
+                Ihre Daten werden verschlüsselt übertragen (TLS) und nach der Prüfung nicht dauerhaft gespeichert. Wir geben keine Daten an Dritte weiter. Unsere Server stehen in der EU. Weitere Details finden Sie in unserer Datenschutzerklärung.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-de="Funktioniert der Dienst für alle Bundesländer?" data-en="Does the service work for all German states?">
+                Funktioniert der Dienst für alle Bundesländer?
+              </span>
+              <span class="faq-item__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-item__answer">
+              <p data-de="Ja. GrundsteuerPrüfer unterstützt alle 16 Bundesländer. Da die Grundsteuerreform länderspezifische Regelungen eingeführt hat (z. B. Bayern, Hamburg, Hessen), erkennt unsere KI automatisch das jeweilige Bundeslandmodell."
+                 data-en="Yes. GrundsteuerPrüfer supports all 16 German states. Since the property tax reform introduced state-specific rules (e.g. Bavaria, Hamburg, Hesse), our AI automatically recognises the relevant state model.">
+                Ja. GrundsteuerPrüfer unterstützt alle 16 Bundesländer. Da die Grundsteuerreform länderspezifische Regelungen eingeführt hat (z. B. Bayern, Hamburg, Hessen), erkennt unsere KI automatisch das jeweilige Bundeslandmodell.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading" class="headline-lg cta-banner__title"
+            data-de="Zahlen Sie nicht mehr als Sie müssen."
+            data-en="Don't pay more than you have to.">
+          Zahlen Sie nicht mehr als Sie müssen.
+        </h2>
+        <p class="subline subline--light cta-banner__sub"
+           data-de="Prüfen Sie jetzt Ihren Grundsteuerbescheid kostenlos und legen Sie Einspruch ein – in weniger als 2 Minuten."
+           data-en="Check your property tax notice now for free and file an objection – in less than 2 minutes.">
+          Prüfen Sie jetzt Ihren Grundsteuerbescheid kostenlos und legen Sie Einspruch ein – in weniger als 2 Minuten.
+        </p>
+        <div class="cta-banner__actions">
+          <a href="https://grundsteuerpruefer.vercel.app" target="_blank" rel="noopener noreferrer"
+             class="btn btn--primary btn--lg"
+             data-de="Kostenlos prüfen" data-en="Check for Free">
+            Kostenlos prüfen
+          </a>
+          <a href="impressum.html" class="btn btn--outline"
+             data-de="Impressum" data-en="Imprint">
+            Impressum
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__top">
+
+        <div>
+          <div class="footer__brand">
+            <img src="app-icon-light.svg" alt="GrundsteuerPrüfer" width="36" height="36" />
+            <span class="footer__brand-name">GrundsteuerPrüfer</span>
+          </div>
+          <p class="footer__tagline"
+             data-de="Ihren Grundsteuerbescheid kostenlos und automatisch prüfen – sicher, schnell, made in Germany."
+             data-en="Check your property tax notice automatically and for free – secure, fast, made in Germany.">
+            Ihren Grundsteuerbescheid kostenlos und automatisch prüfen – sicher, schnell, made in Germany.
+          </p>
+          <p class="footer__tagline mt-16" style="font-size:0.8rem;">
+            &copy; <span id="footer-year"></span> WAMOCON GmbH
+          </p>
+        </div>
+
+        <div>
+          <p class="footer__heading" data-de="Produkt" data-en="Product">Produkt</p>
+          <ul class="footer__links">
+            <li>
+              <a href="https://grundsteuerpruefer.vercel.app" target="_blank" rel="noopener noreferrer"
+                 data-de="App öffnen" data-en="Open App">App öffnen</a>
+            </li>
+            <li>
+              <a href="#features" data-de="Funktionen" data-en="Features">Funktionen</a>
+            </li>
+            <li>
+              <a href="#how-it-works" data-de="So funktioniert's" data-en="How It Works">So funktioniert's</a>
+            </li>
+            <li>
+              <a href="#faq" data-de="FAQ" data-en="FAQ">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__heading" data-de="Rechtliches" data-en="Legal">Rechtliches</p>
+          <ul class="footer__links">
+            <li><a href="impressum.html" data-de="Impressum" data-en="Imprint">Impressum</a></li>
+            <li><a href="datenschutz.html" data-de="Datenschutzerklärung" data-en="Privacy Policy">Datenschutzerklärung</a></li>
+            <li><a href="agb.html" data-de="AGB" data-en="Terms &amp; Conditions">AGB</a></li>
+          </ul>
+          <p class="footer__heading mt-24" data-de="Kontakt" data-en="Contact">Kontakt</p>
+          <ul class="footer__links">
+            <li><a href="mailto:info@wamocon.com">info@wamocon.com</a></li>
+            <li><a href="tel:+49619658383110">+49 6196 5838311</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy"
+           data-de="&copy; 2025 WAMOCON GmbH · Mergenthalerallee 79-81, 65760 Eschborn · Alle Rechte vorbehalten."
+           data-en="&copy; 2025 WAMOCON GmbH · Mergenthalerallee 79-81, 65760 Eschborn · All rights reserved.">
+          &copy; 2025 WAMOCON GmbH · Mergenthalerallee 79-81, 65760 Eschborn · Alle Rechte vorbehalten.
+        </p>
+        <nav class="footer__legal" aria-label="Rechtliche Links / Legal links">
+          <a href="impressum.html" data-de="Impressum" data-en="Imprint">Impressum</a>
+          <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+          <a href="agb.html" data-de="AGB" data-en="T&amp;C">AGB</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top" aria-label="Nach oben scrollen / Scroll to top">▲</button>
+
+  <script src="script.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

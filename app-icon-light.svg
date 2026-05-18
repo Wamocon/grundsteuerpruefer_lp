@@ -1,0 +1,15 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="iconTitle">
+  <title id="iconTitle">GrundsteuerPrüfer App Icon</title>
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="60" fill="#1E3A5F"/>
+  <!-- House shape -->
+  <polygon points="60,18 22,50 32,50 32,95 88,95 88,50 98,50" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="44" y="70" width="14" height="25" rx="2" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="62" y="62" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.7"/>
+  <!-- Magnifying glass overlay -->
+  <circle cx="82" cy="40" r="16" fill="#F5A623" opacity="0.95"/>
+  <circle cx="82" cy="40" r="11" fill="none" stroke="#1E3A5F" stroke-width="3"/>
+  <line x1="90" y1="48" x2="97" y2="55" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Checkmark inside magnifier -->
+  <polyline points="76,40 80,44 89,33" stroke="#1E3A5F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
